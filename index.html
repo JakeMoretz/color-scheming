@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Color Picker</title>
+        <link rel="stylesheet" href="style.css" />
+        <script
+            src="https://kit.fontawesome.com/5cb1bcbb8b.js"
+            crossorigin="anonymous"
+        ></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;500&family=Shadows+Into+Light&display=swap"
+            rel="stylesheet"
+        />
+    </head>
+    <body>
+        <h1 class="title">Color Scheming</h1>
+        <main class="main-container">
+            <div class="options">
+                <input type="color" name="color-picker" id="color-picker" />
+                <div class="select-container">
+                    <select id="colors" name="colors">
+                        <option value="Monochrome">Monochrome</option>
+                        <option value="Monochrome-dark">Monochrome-dark</option>
+                        <option value="Monochrome-light">
+                            Monochrome-light
+                        </option>
+                        <option value="Analogic">Analogic</option>
+                        <option value="Complement">Complement</option>
+                        <option value="Analogic-complement">
+                            Analogic-complement
+                        </option>
+                        <option value="Triad">Triad</option>
+                    </select>
+                </div>
+                <button class="btn">Get color scheme</button>
+            </div>
+            <div class="color-scheme"></div>
+        </main>
+        <h3 class="info">Find the perfect color scheme and there Hex values</h3>
+        <script src="index.js"></script>
+    </body>
+</html>
